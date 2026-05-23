@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Ayushi Sangani - UI/UX Designer & Creative Thinker. Designing intuitive, user-friendly, and visually stunning digital experiences. Browse case studies, projects, and contact for designs.">
+    <meta name="keywords"
+        content="Ayushi Sangani, UI/UX Designer, Portfolio, Case Study, Figma, Prototyping, User Research, Wireframing, Web Design">
+    <meta name="author" content="Ayushi Sangani">
+    <title>Ayushi Sangani | UI/UX Designer Portfolio</title>
+
+    <!-- CSS stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Icons helper -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body data-theme="dark">
+
+    <!-- Glowing Background Blobs -->
+    <div class="bg-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <!-- Header Navigation -->
+    <header id="header">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <span>Ayushi</span>.S<div class="logo-dot"></div>
+            </a>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Work</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <div class="nav-controls">
+                <button class="theme-btn" id="theme-toggle" aria-label="Toggle light/dark theme">
+                    <!-- Moon Icon -->
+                    <svg class="moon-icon" viewBox="0 0 24 24">
+                        <path
+                            d="M12.3 22h-.1c-5.5 0-10-4.5-10-10 0-4.8 3.5-8.9 8.2-9.8.5-.1 1 .2 1.2.7.2.5 0 1.1-.4 1.4-2.8 2-3.8 5.7-2.3 8.8 1.5 3 4.7 4.7 7.9 4.1.5-.1 1 .2 1.2.7.2.5 0 1.1-.4 1.4-1.6 1.7-3.8 2.7-6.2 2.7zm-4.1-17.7C5.1 5.9 3.2 8.7 3.2 12c0 4.9 4 8.8 8.8 8.8 2 0 3.9-.7 5.3-1.9-.9.2-1.9.3-2.8.2-4.1-.3-7.5-3.3-8.3-7.3-.6-2.5.1-5.1 1.7-7.5z" />
+                    </svg>
+                    <!-- Sun Icon -->
+                    <svg class="sun-icon" viewBox="0 0 24 24">
+                        <path
+                            d="M12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zM2 13h2c.55 0 1-.45 1-1s-.45-1-1-1H2c-.55 0-1 .45-1 1s.45 1 1 1zm18 0h2c.55 0 1-.45 1-1s-.45-1-1-1h-2c-.55 0-1 .45-1 1s.45 1 1 1zM11 2v2c0 .55.45 1 1 1s1-.45 1-1V2c0-.55-.45-1-1-1s-1 .45-1 1zm0 18v2c0 .55.45 1 1 1s1-.45 1-1v-2c0-.55-.45-1-1-1s-1 .45-1 1zM5.99 4.58c-.39-.39-1.03-.39-1.41 0s-.39 1.03 0 1.41l1.06 1.06c.39.39 1.03.39 1.41 0s.39-1.03 0-1.41L5.99 4.58zm12.37 12.37c-.39-.39-1.03-.39-1.41 0s-.39 1.03 0 1.41l1.06 1.06c.39.39 1.03.39 1.41 0s.39-1.03 0-1.41l-1.06-1.06zm1.06-10.96c.39-.39.39-1.03 0-1.41s-1.03-.39-1.41 0l-1.06 1.06c-.39.39-.39 1.03 0 1.41s1.03.39 1.41 0l1.06-1.06zM7.05 18.01c.39-.39.39-1.03 0-1.41s-1.03-.39-1.41 0l-1.06 1.06c-.39.39-.39 1.03 0 1.41s1.03.39 1.41 0l1.06-1.06z" />
+                    </svg>
+                </button>
+
+                <button class="mobile-menu-btn" id="mobile-menu-toggle" aria-label="Open menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <span class="hero-tag">Welcome to my space</span>
+                <h1 class="hero-title">
+                    Hi, I'm Ayushi Sangani
+                    <span>UI/UX Designer</span>
+                </h1>
+                <p class="hero-description">
+                    Creative Thinker | Designing meaningful, intuitive, and delightful digital experiences that solve
+                    complex user problems.
+                </p>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-primary">View My Work <i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="fade-in">
+        <div class="container">
+            <div class="about-grid">
+                <div class="glass-card about-text-card">
+                    <span class="section-tag">About Me</span>
+                    <h2 class="about-title">Crafting digital blueprints that users love</h2>
+                    <p class="about-description">
+                        I am a passionate UI/UX Designer focused on creating intuitive, user-friendly, and visually
+                        appealing digital experiences. I enjoy solving problems through thoughtful design and
+                        continuously learning new design trends and technologies.
+                    </p>
+                    <p class="about-description">
+                        To me, design is not just how it looks, but how it flows, communicates, and empowers people to
+                        execute tasks seamlessly. I bridging the gap between product strategy, human cognition, and
+                        aesthetics.
+                    </p>
+
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <h3>10+</h3>
+                            <p>Handcrafted Projects</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>99%</h3>
+                            <p>Aesthetic Focus</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>100%</h3>
+                            <p>User-Centered Design</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-visual">
+                    <div class="avatar-container">
+                        <div class="avatar-inner">
+                            <span class="avatar-icon">🎨</span>
+                            <h4>Ayushi Sangani</h4>
+                            <p>Designing Solutions</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="fade-in">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Capabilities</span>
+                <h2 class="section-title">My Creative Toolbox</h2>
+            </div>
+
+            <div class="skills-grid">
+                <div class="glass-card skill-card">
+                    <div class="skill-icon-wrapper"><i class="fa-solid fa-desktop"></i></div>
+                    <h3>UI Design</h3>
+                    <p class="skill-desc">Designing stunning, responsive interfaces with clean typography, grids, color
+                        harmony, and soft glass layouts.</p>
+                </div>
+                <div class="glass-card skill-card">
+                    <div class="skill-icon-wrapper"><i class="fa-solid fa-magnifying-glass"></i></div>
+                    <h3>UX Research</h3>
+                    <p class="skill-desc">Conducting user interviews, mapping personas, evaluating stress triggers, and
+                        finding structural logic.</p>
+                </div>
+                <div class="glass-card skill-card">
+                    <div class="skill-icon-wrapper"><i class="fa-solid fa-pen-nib"></i></div>
+                    <h3>Wireframing</h3>
+                    <p class="skill-desc">Translating complex concepts into low-fidelity structural sketches and digital
+                        blueprint architecture.</p>
+                </div>
+                <div class="glass-card skill-card">
+                    <div class="skill-icon-wrapper"><i class="fa-solid fa-bezier-curve"></i></div>
+                    <h3>Prototyping</h3>
+                    <p class="skill-desc">Creating micro-interactions and high-fidelity clickable models to test
+                        navigation ease.</p>
+                </div>
+                <div class="glass-card skill-card">
+                    <div class="skill-icon-wrapper"><i class="fa-brands fa-figma"></i></div>
+                    <h3>Figma</h3>
+                    <p class="skill-desc">Mastery in component styling, autolayout, responsive design systems, and
+                        visual deliverables.</p>
+                </div>
+                <div class="glass-card skill-card">
+                    <div class="skill-icon-wrapper">XD</div>
+                    <h3>Adobe XD</h3>
+                    <p class="skill-desc">Structuring flows, digital design assets, layout systems, and interactive
+                        previews for testing.</p>
+                </div>
+                <div class="glass-card skill-card">
+                    <div class="skill-icon-wrapper"><i class="fa-solid fa-mobile-screen"></i></div>
+                    <h3>Responsive Design</h3>
+                    <p class="skill-desc">Optimizing applications so they look equally stunning on mobiles, tablet
+                        screens, and wide monitors.</p>
+                </div>
+                <div class="glass-card skill-card">
+                    <div class="skill-icon-wrapper"><i class="fa-solid fa-route"></i></div>
+                    <h3>User Flows</h3>
+                    <p class="skill-desc">Constructing streamlined diagrams to map users through conversion journeys
+                        without cognitive strain.</p>
+                </div>
+                <div class="glass-card skill-card">
+                    <div class="skill-icon-wrapper"><i class="fa-solid fa-brain"></i></div>
+                    <h3>Design Thinking</h3>
+                    <p class="skill-desc">Utilizing the Empathize, Define, Ideate, Prototype, and Test framework to
+                        solve real-world problems.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="fade-in">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Featured Work</span>
+                <h2 class="section-title">Design Case Studies</h2>
+            </div>
+
+            <div class="projects-grid" id="projects-grid">
+                <!-- Dynamically loaded through JavaScript Fetch -->
+                <div style="grid-column: 1/-1; text-align: center; color: var(--text-secondary); padding: 40px;">
+                    <i class="fa-solid fa-circle-notch fa-spin"
+                        style="font-size: 24px; margin-bottom: 12px; color: var(--accent-primary)"></i>
+                    <p>Fetching amazing projects...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="fade-in">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Journey</span>
+                <h2 class="section-title">Professional Experience</h2>
+            </div>
+
+            <div class="experience-container">
+                <div class="glass-card exp-card">
+                    <div class="exp-icon">🎓</div>
+                    <div class="exp-info">
+                        <h3>UI/UX Design Fresher</h3>
+                        <h4>Creative Thinker & UX Explorer</h4>
+                        <p>
+                            UI/UX Design Fresher passionate about building user-centered experiences and continuously
+                            improving design skills through intensive projects, user-testing practice, and
+                            masterclasses.
+                        </p>
+                        <ul class="exp-bullets">
+                            <li>Dedicated to designing stunning visual layouts with flawless human ergonomics.</li>
+                            <li>Trained in designing structured wireframes, user personas, mapping empathy charts, and
+                                running system audits.</li>
+                            <li>Adept at translating complicated user criteria into logical clickable wireframes in
+                                Figma.</li>
+                            <li>Continuously analyzing current design benchmarks to implement state-of-the-art
+                                interactive micro-interactions.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="fade-in">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Let's Connect</span>
+                <h2 class="section-title">Have a Project in Mind?</h2>
+            </div>
+
+            <div class="contact-grid">
+                <div class="glass-card contact-info-card">
+                    <div class="contact-meta">
+                        <h3>Let's start something great together</h3>
+                        <p>I am available for freelance opportunities, full-time UI/UX roles, and collaborative
+                            projects. Feel free to shoot a message!</p>
+
+                        <div class="contact-details">
+                            <div class="contact-detail-item">
+                                <div class="detail-icon"><i class="fa-solid fa-envelope"></i></div>
+                                <div class="detail-text">
+                                    <h4>Email</h4>
+                                    <a href="mailto:ayushisangani7@gmail.com">ayushisangani7@gmail.com</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="social-links">
+                            <a href="https://www.linkedin.com/in/ayushi-sangani-0b0501368/" class="social-icon"
+                                target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="https://github.com/ayushi-sangani-11" class="social-icon" target="_blank"
+                                aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card contact-form-card">
+                    <form id="contact-form" novalidate>
+                        <div class="form-group">
+                            <input type="text" id="name" class="form-input" placeholder=" " required>
+                            <label for="name" class="form-label">Full Name</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" class="form-input" placeholder=" " required>
+                            <label for="email" class="form-label">Email Address</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" class="form-input" placeholder=" " required></textarea>
+                            <label for="message" class="form-label">Tell me about your project</label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">
+                            Send Message <i class="fa-solid fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-container">
+            <div class="footer-copy">
+                &copy; 2026 Ayushi Sangani. Crafted with design precision.
+            </div>
+            <ul class="footer-nav">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Work</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="/admin.html" style="color: var(--accent-primary); font-weight: bold;"><i
+                            class="fa-solid fa-lock"></i> Admin</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- Interactive Case Study Modal -->
+    <div class="modal" id="case-study-modal">
+        <div class="modal-backdrop" id="modal-backdrop"></div>
+        <div class="modal-content-wrapper">
+            <button class="modal-close-btn" id="modal-close" aria-label="Close Case Study"><i
+                    class="fa-solid fa-xmark"></i></button>
+
+            <div class="modal-banner">
+                <img src="" alt="" class="modal-banner-img" id="modal-img">
+                <div class="modal-banner-overlay"></div>
+            </div>
+
+            <div class="modal-body">
+                <h2 class="modal-title" id="modal-title"></h2>
+
+                <div class="modal-meta-grid">
+                    <div class="meta-column">
+                        <h4>My Role</h4>
+                        <p id="modal-role"></p>
+                    </div>
+                    <div class="meta-column">
+                        <h4>Tools Used</h4>
+                        <p id="modal-tools"></p>
+                    </div>
+                    <div class="meta-column">
+                        <h4>Deliverables</h4>
+                        <p>User Research, Wireframes, Hi-Fi Prototype</p>
+                    </div>
+                </div>
+
+                <div class="modal-section">
+                    <h3>Project Description</h3>
+                    <p id="modal-desc"></p>
+                </div>
+
+                <div class="modal-section">
+                    <h3>The Problem Statement</h3>
+                    <p id="modal-problem"
+                        style="background: rgba(239, 68, 68, 0.04); border-left: 3px solid var(--accent-tertiary); padding: 16px; border-radius: 8px; color: var(--text-primary); font-weight: 500;">
+                    </p>
+                </div>
+
+                <div class="modal-section">
+                    <h3>Design Process</h3>
+                    <div class="process-steps" id="modal-process">
+                        <!-- Populated dynamically -->
+                    </div>
+                </div>
+
+                <div class="modal-actions">
+                    <a href="" id="modal-live" target="_blank" class="btn btn-primary">Live Presentation <i
+                            class="fa-solid fa-up-right-from-square"></i></a>
+                    <a href="" id="modal-github" target="_blank" class="btn btn-secondary"><i
+                            class="fa-brands fa-github"></i> GitHub Link</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Notification Toast -->
+    <div class="toast" id="toast-notification"></div>
+
+    <!-- Main JS script -->
+    <script src="app.js"></script>
+</body>
+
+</html>

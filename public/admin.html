@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayushi Sangani | Admin Dashboard</title>
+    
+    <!-- CSS stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Icons helper -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body data-theme="dark">
+
+    <!-- Glowing Background Blobs -->
+    <div class="bg-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <!-- Simple Dashboard Header -->
+    <header class="scrolled">
+        <div class="container nav-container">
+            <a href="/" class="logo">
+                <span>Ayushi</span>.S<div class="logo-dot"></div> <span style="font-size: 14px; background: rgba(99, 102, 241, 0.15); color: var(--accent-primary); padding: 4px 10px; border-radius: 12px; font-weight: 600; letter-spacing: 0;">Portal</span>
+            </a>
+            
+            <a href="/#projects" class="btn btn-secondary btn-sm" style="padding: 6px 16px; border-radius: 20px; font-size: 13px;">
+                <i class="fa-solid fa-arrow-left"></i> View Live Site
+            </a>
+        </div>
+    </header>
+
+    <div class="container admin-section">
+        
+        <!-- 1. AUTH LOGIN SECTION (Visible by default until token is set) -->
+        <div class="glass-card admin-login-wrapper" id="login-section">
+            <div style="text-align: center; margin-bottom: 32px;">
+                <div style="width: 60px; height: 60px; border-radius: 50%; background: rgba(99, 102, 241, 0.1); border: 1.5px dashed var(--accent-primary); display: inline-flex; align-items: center; justify-content: center; margin-bottom: 16px; font-size: 24px; color: var(--accent-primary)">
+                    <i class="fa-solid fa-lock"></i>
+                </div>
+                <h2 style="font-family: var(--font-heading); font-size: 22px; font-weight: 700; color: var(--text-primary);">Secure Portal Access</h2>
+                <p style="font-size: 13px; color: var(--text-secondary); margin-top: 6px;">Please authenticate to update your design portfolio contents.</p>
+            </div>
+            
+            <form id="login-form">
+                <div class="form-group">
+                    <input type="password" id="admin-pass" class="form-input" placeholder=" " required autocomplete="current-password">
+                    <label for="admin-pass" class="form-label">Admin Security Key</label>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">
+                    Authenticate <i class="fa-solid fa-right-to-bracket"></i>
+                </button>
+            </form>
+            <p style="text-align: center; font-size: 11.5px; color: var(--text-muted); margin-top: 16px;">Hint: Default key is 'admin' (changeable in server.js)</p>
+        </div>
+
+        <!-- 2. MAIN DASHBOARD CONTENT (Hidden until authorized) -->
+        <div id="dashboard-section" style="display: none;">
+            <div class="dashboard-title">
+                <span>Dashboard Hub</span>
+                <button class="btn btn-secondary btn-sm" id="logout-btn" style="padding: 6px 16px; border-radius: 20px; font-size: 13px;">
+                    <i class="fa-solid fa-right-from-bracket"></i> Logout
+                </button>
+            </div>
+            <p class="dashboard-subtitle">Manage design case studies and track client communications.</p>
+
+            <!-- Dashboard Sub Navigation -->
+            <div class="admin-nav">
+                <button class="admin-nav-btn active" data-tab="add-project-tab">
+                    <i class="fa-solid fa-folder-plus"></i> Publish Case Study
+                </button>
+                <button class="admin-nav-btn" data-tab="manage-projects-tab">
+                    <i class="fa-solid fa-cubes"></i> Repository Registry
+                </button>
+                <button class="admin-nav-btn" data-tab="messages-tab">
+                    <i class="fa-solid fa-comments"></i> User Communication Terminal
+                </button>
+            </div>
+
+            <!-- TAB 1: ADD NEW PROJECT FORM -->
+            <div class="tab-content" id="add-project-tab">
+                <div class="glass-card admin-card">
+                    <h3 style="font-family: var(--font-heading); font-size: 20px; font-weight: 700; margin-bottom: 24px; border-bottom: 1px solid var(--glass-border); padding-bottom: 12px;">
+                        <i class="fa-solid fa-circle-plus" style="color: var(--accent-primary); margin-right: 8px;"></i> Craft Dynamic Design Case Study
+                    </h3>
+                    
+                    <form id="project-form" enctype="multipart/form-data">
+                        <div class="admin-grid">
+                            <!-- Left Column fields -->
+                            <div>
+                                <div class="admin-form-group">
+                                    <label for="proj-name">Project Name &amp; Title</label>
+                                    <input type="text" id="proj-name" name="name" class="form-input" placeholder="e.g., Zenith - Mindfulness App" required>
+                                </div>
+                                <div class="admin-form-group">
+                                    <label for="proj-desc">Short Card Description</label>
+                                    <input type="text" id="proj-desc" name="description" class="form-input" placeholder="Brief outline summarizing the product experience" required>
+                                </div>
+                                <div class="admin-form-group">
+                                    <label for="proj-tools">Design Tools Utilized (Comma Separated)</label>
+                                    <input type="text" id="proj-tools" name="tools" class="form-input" placeholder="e.g., Figma, After Effects, Protopie" required>
+                                </div>
+                                <div class="admin-form-group">
+                                    <label for="proj-role">My Professional Role</label>
+                                    <input type="text" id="proj-role" name="role" class="form-input" placeholder="e.g., UI Designer, Lead UX Researcher" required>
+                                </div>
+                            </div>
+                            
+                            <!-- Right Column Fields -->
+                            <div>
+                                <div class="admin-form-group">
+                                    <label for="proj-problem">Detailed Problem Statement</label>
+                                    <textarea id="proj-problem" name="problem" class="form-input" style="min-height: 80px;" placeholder="What user frustration or business gap does this study answer?" required></textarea>
+                                </div>
+                                <div class="admin-form-group">
+                                    <label for="proj-process">Case Study Design Process (One Phase per line)</label>
+                                    <textarea id="proj-process" name="process" class="form-input" style="min-height: 162px;" placeholder="Format each line as Name: Details&#10;e.g.,&#10;1. Empathize: Interviewed target demographics&#10;2. Define: Created workflow wireframes&#10;3. Prototype: Developed responsive screens in Figma" required></textarea>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Secondary Row links and files -->
+                        <div class="admin-grid" style="margin-top: 16px;">
+                            <div>
+                                <div class="admin-form-group">
+                                    <label>Case Thumbnail Image</label>
+                                    <div class="file-upload-wrapper">
+                                        <input type="file" id="proj-thumbnail" name="thumbnail" class="file-upload-input" accept="image/*" required>
+                                        <div class="file-upload-label" id="upload-label-preview">
+                                            <i class="fa-solid fa-cloud-arrow-up"></i>
+                                            <span>Drag &amp; Drop or Browse Image</span>
+                                            <p style="font-size: 11px; color: var(--text-muted);">Max size: 5MB (JPG, PNG, WEBP, GIF)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <div class="admin-form-group">
+                                    <label for="proj-github">GitHub Repository Link (Optional)</label>
+                                    <input type="url" id="proj-github" name="github" class="form-input" placeholder="e.g., https://github.com/..." value="#">
+                                </div>
+                                <div class="admin-form-group">
+                                    <label for="proj-live">Live Preview / Behance Presentation (Optional)</label>
+                                    <input type="url" id="proj-live" name="live" class="form-input" placeholder="e.g., https://behance.net/..." value="#">
+                                </div>
+                                
+                                <div style="display: flex; gap: 16px; margin-top: 36px;">
+                                    <button type="reset" class="btn btn-secondary" style="flex: 1;">Reset Form</button>
+                                    <button type="submit" class="btn btn-primary" style="flex: 2;">
+                                        Publish Case Study <i class="fa-solid fa-paper-plane"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- TAB 2: MANAGE PROJECTS LIST -->
+            <div class="tab-content" id="manage-projects-tab" style="display: none;">
+                <div class="glass-card admin-card">
+                    <h3 style="font-family: var(--font-heading); font-size: 20px; font-weight: 700; margin-bottom: 24px; border-bottom: 1px solid var(--glass-border); padding-bottom: 12px;">
+                        <i class="fa-solid fa-cubes" style="color: var(--accent-secondary); margin-right: 8px;"></i> Project Registry Listing
+                    </h3>
+                    
+                    <div class="admin-project-list" id="admin-projects-container">
+                        <!-- Loaded through API dynamically -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- TAB 3: CONTACT MESSAGES -->
+            <div class="tab-content" id="messages-tab" style="display: none;">
+                <div class="glass-card admin-card">
+                    <h3 style="font-family: var(--font-heading); font-size: 20px; font-weight: 700; margin-bottom: 24px; border-bottom: 1px solid var(--glass-border); padding-bottom: 12px;">
+                        <i class="fa-solid fa-comments" style="color: var(--accent-tertiary); margin-right: 8px;"></i> Client Inquiries &amp; Messages
+                    </h3>
+                    
+                    <div id="messages-container">
+                        <!-- Messages dynamically fetched from API -->
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Notification Toast -->
+    <div class="toast" id="toast-notification"></div>
+
+    <!-- Admin dashboard JavaScript -->
+    <script src="admin.js"></script>
+</body>
+</html>

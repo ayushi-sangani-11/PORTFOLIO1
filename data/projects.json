@@ -1,0 +1,14 @@
+[
+    {
+        "id": "1779555977147",
+        "name": "Shoe website",
+        "description": "I created Shoes shopping website wireframe",
+        "tools": "Figma",
+        "role": "UI/UX Designer & Product Designer",
+        "problem": "Many online shoe shopping websites struggle to balance product visibility with an engaging user experience. Users often encounter cluttered layouts, weak visual hierarchy, and interfaces that fail to immediately draw attention to featured products or ongoing promotions. This can make browsing less interactive and reduce user engagement.\r\n\r\nThe challenge for this project was to design a visually appealing and modern landing page that effectively highlights featured products while maintaining a clean and easy-to-navigate experience.\r\n\r\nKey Problems Identified:\r\nProduct information was not visually emphasized enough\r\nPromotional offers lacked strong attention-grabbing placement\r\nNavigation could feel overwhelming or disconnected\r\nLack of engaging visual hierarchy\r\nUsers needed a faster and more immersive browsing experience\r\nDesign Goal:\r\n\r\nTo create a modern Nike-inspired landing page that:\r\n\r\nHighlights the featured shoe as the focal point\r\nCreates strong visual hierarchy using typography and spacing\r\nMakes promotions instantly noticeable\r\nImproves navigation clarity\r\nDelivers a premium and interactive shopping experience\r\n\r\nMy Solution:\r\nDesigned a clean and product-focused interface with bold typography, promotional highlights, balanced layout structure, and strong visual emphasis on the product to create a more engaging shopping experience.",
+        "process": "\r\nResearch → Studied ecommerce websites, user needs, and design inspiration.\r\n\r\nProblem Definition → Identified issues in product visibility, navigation, and user engagement.\r\n\r\nIdeation → Explored layout ideas, content hierarchy, and interface concepts.\r\n\r\nWireframing→ Created low-fidelity structures for screen layout and user flow.\r\nUI Design → Designed visually appealing high-fidelity screens with typography, colors, and branding.\r\n\r\nPrototyping→ Built interactive flows to simulate the user experience.\r\n\r\nTesting & Iteration → Refined the design to improve usability and overall experience.\r\n",
+        "thumbnail": "/uploads/1779555977093-674975068.png",
+        "github": "https://github.com/ayushi-sangani-11/projects",
+        "live": "https://drive.google.com/drive/folders/1IhBBQd8eQuXrvRWBvYZmw1qps79uvUGL?usp=drive_link"
+    }
+]
